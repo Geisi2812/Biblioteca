@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background-color: #f7f6c9;
+}
+
+.logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.menu-desplegable {
+  position: relative;
+}
+
+.menu-desplegable ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(252, 251, 205, 0.767);
+  padding: 10px;
+  z-index: 1;
+  min-width: 150px;
+}
+
+.menu-desplegable:hover ul.submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-desplegable ul.submenu li {
+  margin-bottom: 7px;
+}
+
+.menu-desplegable ul.submenu a {
+  display: block;
+  padding: 10px 15px; 
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-desplegable ul.submenu a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.submenu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+footer {
+  background-color: #f7f6c9;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 0 10px; 
+}
+
+.social-links img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about-us img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.horizontal-sections {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 10px;
+  opacity: 0;
+  animation: fadeIn 0.1s forwards;
+  animation-delay: 0.1s;
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #000000;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: carouselAnimation 30s infinite linear;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  margin-right: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.book-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.book-info p {
+  margin: 5px 0;
+}
+
+.book-info button {
+  background-color: #ff6347;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-info button:hover {
+  background-color: #ff4500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes carouselAnimation {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}

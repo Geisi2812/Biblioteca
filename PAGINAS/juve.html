@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/x-icon" href="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png">
+    <title>Geisi Books</title>
+    <link rel="stylesheet" href="D:\Biblioteca\CSS y Scrip\Style roma.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png" alt="Geisi Books" height="59" width="59">
+            <span>Geisi Books</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="INICIO.html">Inicio</a></li>
+                <li><a href="Sobre nosotros.html">Sobre nosotros</a></li>
+                <li class="menu-desplegable"><a href="Libros.html">Libros</a>
+                    <ul class="submenu">
+                        <li><a href="Romance.html">Romance</a></li>
+                        <li><a href="Autoayuda.html">Autoayuda</a></li>
+                        <li><a href="juve.html">Juveniles</a></li>
+                        <li><a href="infantiles.html">Infantiles</a></li>
+                        <li><a href="ficcion.html">Ficción</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="header-text">
+        <h1>Juveniles</h1>
+        <p>¡Bienvenido a nuestra colección de libros juveniles! Aquí encontrarás historias vibrantes que exploran amistades inolvidables, <p>romances apasionantes y aventuras que te transportarán a mundos fascinantes..</p>
+    </div>
+
+    <main>
+        <div class="book-grid">
+            <div class="book">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhhfXMocITlWBrgrfDJuJQdcZe84wt_Rgqw&s" alt="Libro 1">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/El%20chico%20que%20dibujaba%20constelaciones%20-%20Alice%20Kellen.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/71Ik82p1otL._AC_UF894,1000_QL80_.jpg" alt="Libro 2">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Tan%20cerca%20de%20ti%20-%20Antonio%20Hidalgo.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1700008048i/202143000.jpg" alt="Libro 3">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Los%20secretos%20de%20Victoria%20Olivares%20-%20Helen%20Rytkonen.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/816JvVQXXpL._AC_UF894,1000_QL80_.jpg" alt="Libro 4">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Exodo%20-%20Kate%20Stewart.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://assets.lectulandia.com/b/ab/Dona%20Ter/Corazones%20en%20el%20balcon%20(3)/small.jpg" alt="Libro 5">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Corazones%20en%20el%20balcon%20-%20Dona%20Ter.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://m.media-amazon.com/images/I/817m6h2YX-L._AC_UF1000,1000_QL80_.jpg" alt="Libro 6">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/El%20camino%20a%20Rhodes%20-%20Mariana%20Zapata.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550244378i/44016763.jpg" alt="Libro 7">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Finge%20que%20me%20quieres%20-%20Lucy%20Score.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://assets.lectulandia.com/b/ab/Robbie%20Couch/Si%20te%20vuelvo%20a%20ver%20manana%20(1)/big.jpg" alt="Libro 8">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Si%20te%20vuelvo%20a%20ver%20manana%20-%20Robbie%20Couch.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhlOl2gOV4_o1JYs3nE9J1eaSTas0G8Y4bw&spg" alt="Libro 9">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Vivir%20arrepentida%20-%20Lisa%20de%20Jong.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg28JTlrkSSyRaikg3Z7OtbFg4WvCazpAxIA&s" alt="Libro 10">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Tal%20vez%20nunca%20-%20Colleen%20Hoover.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://assets.lectulandia.com/b/ab/Natael%20Trapp/Las%207%20vidas%20de%20Leo%20Belami%20(1)/big.jpg" alt="Libro 11">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Las%207%20vidas%20de%20Leo%20Belami%20-%20Natael%20Trapp.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://www.mrbooks.com/mrbooks/portadas/9788416700653.webp" alt="Libro 12">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/La%20joya%20de%20medianoche%20-%20Richelle%20Mead.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://assets.lectulandia.com/b/ab/Alice%20Kellen/El%20dia%20que%20dejo%20de%20nevar%20en%20Alaska%20(2)/big.jpg" alt="Libro 13">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/El%20dia%20que%20dejo%20de%20nevar%20en%20Alaska%20-%20Alice%20Kellen.pdf')">Leer</button>
+            </div>
+            <div class="book">
+                <img src="https://assets.lectulandia.com/b/ab/Alice%20Kellen/Nosotros%20en%20la%20luna%20(5)/big.jpg" alt="Libro 14">
+                <button class="read-button" onclick="leerLibro('file:///D:/Biblioteca/LIBROS/Juveniles/Nosotros%20en%20la%20luna%20-%20Alice%20Kellen.pdf')">Leer</button>
+            </div>
+        </div>
+    </main>
+<div id="chatbot">
+    <div id="chatbot-header">
+        Chat-Books
+        <button id="close-chatbot" onclick="toggleChatbot()">Cerrar</button>
+    </div>
+    <div id="chatbot-content">
+        <div id="chatbot-messages"></div>
+        <input id="chatbot-input" type="text" placeholder="Escribe un mensaje...">
+        <button id="chatbot-send" onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="#"><img src="https://i1.wp.com/www.thaisignup.com/wp-content/uploads/2019/12/thaisignup-11-12-2019-02.png?fit=1600%2C1600&ssl=1" alt="Correo"></a></li>
+            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image" alt="Twitter"></a></li>
+            <li><a href="#"><img src="https://th.bing.com/th/id/R.b473fcad595f09b0afe1270d9016ac8c?rik=UkXeB5L2aE8Biw&riu=http%3a%2f%2fpngimg.com%2fuploads%2finstagram%2finstagram_PNG9.png&ehk=GnhAoqBr5eV3LRtLGDB2XElOW7mvkdk29%2byVkqj09y8%3d&risl=&pid=ImgRaw&r=0" alt="Instagram"></a></li>
+          </ul>
+        <p>&copy; Geisi Books</p>
+    </footer>
+    <script src="D:\Biblioteca\CSS y Scrip\scrip roma.js"></script>
+</body>
+</html>

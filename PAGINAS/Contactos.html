@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png">
+    <title>Geisi Books</title>
+    <link rel="stylesheet" href="D:\Biblioteca\CSS y Scrip\conta.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png" alt="Geisi Books" height="59" width="59">
+            <span>
+                <span class="geisi">Geisi</span>
+                <span>Books</span>
+            </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="INICIO.html">Inicio</a></li>
+                <li><a href="Sobre nosotros.html">Sobre nosotros</a></li>
+                <li class="menu-desplegable"><a href="Libros.html">Libros</a>
+                    <ul class="submenu">
+                        <li><a href="Romance.html">Romance</a></li>
+                        <li><a href="Autoayuda.html">Autoayuda</a></li>
+                        <li><a href="juve.html">Juveniles</a></li>
+                        <li><a href="infantiles.html">Infantiles</a></li>
+                        <li><a href="ficcion.html">Ficción</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="enviarBtn">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+        <br><br>
+
+        <div class="social-links">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="https://th.bing.com/th/id/R.b473fcad595f09b0afe1270d9016ac8c?rik=UkXeB5L2aE8Biw&riu=http%3a%2f%2fpngimg.com%2fuploads%2finstagram%2finstagram_PNG9.png&ehk=GnhAoqBr5eV3LRtLGDB2XElOW7mvkdk29%2byVkqj09y8%3d&risl=&pid=ImgRaw&r=0" alt="Instagram"> Geisi.Books01</a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook"> Geisi Books- Biblioteca digital</a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image" alt="Twitter"> Geisibooks01</a></li>
+                <li><a href="mailto:contacto@bibliotecadigital.com"><img src="https://i1.wp.com/www.thaisignup.com/wp-content/uploads/2019/12/thaisignup-11-12-2019-02.png?fit=1600%2C1600&ssl=1" alt="Correo"> geisibooks01@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Encuesta </h1>
+    <form id="surveyForm">
+        <label for="likeLibrary">¿Te gusta nuestra biblioteca digital?</label><br>
+        <input type="radio" id="likeLibraryYes" name="likeLibrary" value="Sí" required> Sí
+        <input type="radio" id="likeLibraryNo" name="likeLibrary" value="No"> No
+        <br><br>
+
+        <label for="bookType">¿Qué tipo de libros prefieres?</label><br>
+        <select id="bookType" name="bookType" required>
+            <option value="Romance">Romance</option>
+            <option value="Autoayuda">Autoayuda</option>
+            <option value="Juveniles">Juveniles</option>
+            <option value="Infantiles">Infantiles</option>
+            <option value="Historia">Historia</option>
+            <option value="Ficción">Ficción</option>
+            <option value="Otros">Otros</option>
+        </select>
+        <input type="text" id="otherBookType" name="otherBookType" class="other-input" placeholder="Especifica el tipo de libro">
+        <br><br>
+
+        <label for="howDidYouFindUs">¿Cómo conociste nuestra biblioteca?</label><br>
+        <input type="checkbox" id="socialMedia" name="howDidYouFindUs" value="Redes sociales"> Redes sociales<br>
+        <input type="checkbox" id="friends" name="howDidYouFindUs" value="Amigos"> Amigos<br>
+        <input type="checkbox" id="advertisements" name="howDidYouFindUs" value="Anuncios"> Anuncios<br>
+        <input type="checkbox" id="searchEngine" name="howDidYouFindUs" value="Buscador"> Buscador<br>
+        <input type="checkbox" id="other" name="howDidYouFindUs" value="Otro"> Otro<br>
+        <br><br>
+
+        <label for="improvements">¿Qué mejorarías de nuestra biblioteca?</label><br>
+        <textarea id="improvements" name="improvements" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="participate">¿Te gustaría participar en actividades relacionadas con la lectura?</label><br>
+        <input type="radio" id="participateYes" name="participate" value="Sí" required> Sí
+        <input type="radio" id="participateNo" name="participate" value="No"> No
+        <br><br>
+
+        <label for="favoriteAuthor">¿Cuál es tu autor(a) favorito(a)?</label><br>
+        <input type="text" id="favoriteAuthor" name="favoriteAuthor" required>
+        <br><br>
+
+        <label for="bookTitle">Título del libro que te gustaría leer:</label><br>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+        <br><br>
+
+        <label for="comments">Comentarios adicionales:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <footer>
+        <ul class="social-links">
+            <li><a href="#"><img src="https://i1.wp.com/www.thaisignup.com/wp-content/uploads/2019/12/thaisignup-11-12-2019-02.png?fit=1600%2C1600&ssl=1" alt="Correo"></a></li>
+            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image" alt="Twitter"></a></li>
+            <li><a href="#"><img src="https://th.bing.com/th/id/R.b473fcad595f09b0afe1270d9016ac8c?rik=UkXeB5L2aE8Biw&riu=http%3a%2f%2fpngimg.com%2fuploads%2finstagram%2finstagram_PNG9.png&ehk=GnhAoqBr5eV3LRtLGDB2XElOW7mvkdk29%2byVkqj09y8%3d&risl=&pid=ImgRaw&r=0" alt="Instagram"></a></li>
+        </ul>
+        <p>&copy; Geisi Books</p>
+    </footer>
+    <script src="D:\Biblioteca\CSS y Scrip\script conta.js"></script>
+</body>
+</html>

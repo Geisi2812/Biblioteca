@@ -1,0 +1,179 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #f7f6c9;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+    display: inline-block; 
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-desplegable {
+    position: relative;
+}
+
+.menu-desplegable ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(252, 251, 205, 0.767);
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu-desplegable:hover ul.submenu {
+    display: block;
+}
+
+.menu-desplegable ul.submenu li {
+    list-style: disc;
+    margin-bottom: 7px;
+}
+
+
+.banner {
+    position: relative;
+    background-image: url('https://unis.edu.gt/wp-content/uploads/2024/01/Biblioteca-unis-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .mensaje {
+    position: relative;
+    z-index: 2;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    background-color: #f7f6c9;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.menu-desplegable:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    padding: 6px 15px;
+    white-space: nowrap;
+}
+
+.submenu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-desplegable:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo img {
+    margin-right: 25px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    transform: translateY(-10%);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
